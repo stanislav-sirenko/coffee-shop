@@ -1,0 +1,324 @@
+@font-face {
+  font-family: "Font-Awesome";
+  src: url(./fonts/icon-fonts/fa-brands-400.ttf);
+}
+
+@font-face {
+  font-family: "Font-Awesome";
+  src: url(./fonts/icon-fonts/fa-brands-400.woff2);
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(./fonts/Montserrat-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url(./fonts/Montserrat-Black.woff) format("woff");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url(./fonts/Nunito-Bold.woff) format("woff");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Nunito-Regular";
+  src: url(./fonts/Nunito-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito-LightItalic";
+  src: url(./fonts/Nunito-LightItalic.woff) format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Nunito-SemiBold";
+  src: url(./fonts/Nunito-SemiBold.woff) format("woff");
+  font-weight: bold;
+  font-style: bold;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.section-heder {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+header {
+  /* min-width: 260px; */
+  /* min-height: 100vh; */
+  background-color: #415167;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  align-items: center;
+  /* padding-left: 40px; */
+  /* position: fixed; */
+  /* opacity: 0.4; */
+  position: fixed;
+  z-index: 11;
+  min-width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 0;
+}
+
+.header-title {
+  font-family: "Nunito-Bold";
+  font-size: 30px;
+  color: #258179;
+  max-width: 190px;
+  margin: 0;
+  padding: 0 11px 0 11px;
+  border-right: 3px solid #edf0f5;
+}
+
+.header__menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 0.7;
+}
+
+.header__menu-list {
+  font-family: "Nunito-Regular";
+  font-size: 20px;
+  color: #edf0f5;
+  list-style: none;
+  padding: 15px 15px;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  width: 170px;
+  text-align: center;
+
+  /* min-width: 70px; */
+}
+
+.header__menu-list:hover {
+  color: #258179;
+  transition-duration: 0.7s;
+}
+
+.decoration-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  /* margin-right: 300px; */
+}
+
+.decoration-image-u {
+  max-width: 100%;
+  max-height: 90%;
+  z-index: 1;
+}
+
+.decoration-title {
+  font-family: "Montserrat-Black";
+  font-size: 54px;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.decoration-title__text {
+  display: flex;
+  flex-direction: column;
+  width: 1px;
+  padding-right: 158px;
+}
+
+.decoration-title__text-blue {
+  z-index: 10;
+  color: #415167;
+}
+
+.decoration-title__text-brown {
+  color: #258179;
+  z-index: 10;
+}
+
+.decoration-text {
+  color: #edf0f5;
+}
+
+/* main {
+  margin-right: 300px;
+} */
+
+h3 {
+  font-family: "Nunito-Regular";
+  font-size: 20px;
+  color: #415167;
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Montserrat-Black";
+  font-size: 30px;
+  color: #415167;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.info-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
+
+.info-content__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-content__img {
+  max-width: 70px;
+}
+
+.info-content__title {
+  font-family: "Nunito-Bold";
+  font-size: 24px;
+  padding: 40px 10px 10px 10px;
+  margin: 0;
+  color: #415167;
+}
+
+.info-content__title-text {
+  font-family: "Nunito-Regular";
+  font-size: 16px;
+  text-align: center;
+  max-width: 220px;
+  padding: 0 10px;
+  margin: 0;
+  color: #415167;
+}
+
+/* .swiper {
+  z-index: -1;
+  position: fixed;
+  max-width: 87%;
+  min-height: 100vh;
+  /* background-repeat: repeat-y; */
+/* } */
+
+.bgr-img {
+  background-image: url("./src/image/coffee-beans-on-dark-background-top-view-coffee-concept.jpg");
+  background-position: 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+  min-width: 90%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  /* background: url("./src/image/coffee-beans-on-dark-background-top-view-coffee-concept.jpg") 0 0 / cover repeat fixet; */
+}
+
+.block {
+  max-width: 70%;
+  background-color: rgba(255, 255, 255, 0.744);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+footer {
+  box-sizing: border-box;
+}
+
+.icons {
+  margin-top: 100px;
+  /* margin-bottom: 40px; */
+}
+::selection {
+  background: #a1a1a1;
+}
+a:hover {
+  cursor: pointer;
+}
+
+.icons i {
+  font-family: "Font-Awesome";
+  margin-left: 30px;
+  font-size: 1.6em;
+  transition: 0.3s;
+  padding: 18px;
+  color: #003f5c;
+
+  border-radius: 50%;
+  background: #cccccc;
+  box-shadow: 7px 7px 15px #8f8f8f, -7px -7px 15px #f2f2f2;
+}
+
+.icons i:hover {
+  color: #001f2e;
+  font-size: 1.55em;
+  /* background: #cccccc; */
+  border-radius: 50%;
+  box-shadow: -7px -7px 15px #8f8f8f, 7px 7px 15px #f2f2f2;
+}
+
+.icons .fa-vk:hover {
+  background: radial-gradient(circle at 30% 107%, #5181b8 30%, #2a5885 65%, #edeef0 30%, #f7f8fa 40%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icons .fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icons .fa-whatsapp:hover {
+  background: radial-gradient(circle at 30% 107%, #128c7e 10%, #075e54 15%, #189e4a 45%, #19a86c 60%, #28eb80 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icons .fa-telegram-plane:hover {
+  background: radial-gradient(circle at 30% 107%, #3f89de 30%, #2a5885 65%, #b2c8f5 30%, #4980ec 40%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
