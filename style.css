@@ -288,8 +288,7 @@ a:hover {
 
 .icons i:hover {
   color: #001f2e;
-  font-size: 1.55em;
-  /* background: #cccccc; */
+  font-size: 1.6em;
   border-radius: 50%;
   box-shadow: -7px -7px 15px #8f8f8f, 7px 7px 15px #f2f2f2;
 }
