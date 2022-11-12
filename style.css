@@ -59,6 +59,101 @@ body {
   background-color: #ffffff;
 }
 
+.preloader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: black;
+}
+
+.preloader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -100px 0 0 -100px;
+  /* border-top: 3px solid #3498db; */
+  border-top: 2px solid #f9002f;
+
+  border-radius: 50%;
+
+  -webkit-animation: spin 3.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 3.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+.preloader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  /* border-top: 3px solid #e74c3c; */
+  border-top: 2px solid #2a9a9f;
+
+  border-radius: 50%;
+
+  -webkit-animation: spin 2.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 2.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+.preloader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+  /* border-top: 3px solid #f9c922; */
+  border-top: 2px solid #f1b211;
+
+  border-radius: 50%;
+
+  -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg); /* IE 9 */
+    transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+  }
+}
+
+.hiden {
+  transition: 1s;
+  opacity: 0;
+}
+
+.scale {
+  scale: 5;
+  border-top: 1px solid #f9002f;
+  transition: 1s;
+}
+
 .section-heder {
   display: flex;
   justify-content: center;
@@ -245,7 +340,8 @@ h1 {
   min-width: 90%;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 40px;
 }
 
@@ -283,14 +379,14 @@ a:hover {
 
   border-radius: 50%;
   background: #cccccc;
-  box-shadow: 7px 7px 15px #8f8f8f, -7px -7px 15px #f2f2f2;
+  box-shadow: 5px 5px 13px #8f8f8f, -5px -5px 13px #ebebeb;
 }
 
 .icons i:hover {
-  color: #001f2e;
+  color: #000203;
   font-size: 1.6em;
   border-radius: 50%;
-  box-shadow: -7px -7px 15px #8f8f8f, 7px 7px 15px #f2f2f2;
+  box-shadow: -5px -5px 13px #8f8f8f, 5px 5px 13px #ebebeb;
 }
 
 .icons .fa-vk:hover {
@@ -319,4 +415,183 @@ a:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.menu {
+  text-align: center;
+  font-family: "Nunito-Bold";
+  font-size: 40px;
+  color: #003f5c;
+}
+
+.box-title {
+  font-family: "Nunito-Bold";
+
+  color: #003f5c;
+  font-weight: normal;
+  margin: 0 0 0 -1.25em;
+  padding: 0 0.5em 0.15em 1.2em;
+  border-bottom: 2px solid rgb(41, 135, 193);
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, transparent, rgb(41, 135, 193) 10%, rgb(41, 135, 193) 90%, #ff000000);
+  width: calc(100% + 0.75em);
+}
+
+/* h2:before {
+  font-family: "Nunito-Bold";
+
+  content: "\2605";
+  margin: 0 0.25em 0 -1.1em;
+} */
+
+ul.boxes {
+  font-family: "Nunito-Regular";
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li.box {
+  width: 40%;
+  margin: 2% 4% 2% 5%;
+  display: inline-table;
+  box-sizing: border-box;
+  padding-left: 1em;
+  color: #fff;
+  font-size: 1.5em;
+  border-left: 2px solid rgb(41, 135, 193);
+  border-image-slice: 1;
+  border-right: 2px solid rgb(41, 135, 193);
+  border-image-source: linear-gradient(180deg, transparent, rgb(41, 135, 193) 20%, rgb(41, 135, 193) 60%, #ffffff00 90%);
+  padding-right: 1em;
+  padding-bottom: 4em;
+}
+
+li.box:after {
+  content: "";
+  float: left;
+  width: calc(100% + 4em);
+  border-bottom: 2px solid rgb(41, 135, 193);
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, transparent, rgb(41, 135, 193) 15%, rgb(41, 135, 193) 85%, #ffffff00);
+  margin-left: -2em;
+  height: 0.75em;
+}
+
+li.box:nth-child(1) {
+  transform: rotate(-1deg);
+  top: 1.5em;
+  position: relative;
+}
+
+li.box:nth-child(2) {
+  transform: rotate(2deg);
+}
+
+li.box:nth-child(3) {
+  transform: rotate(3deg);
+  top: -5em;
+  position: relative;
+}
+
+li.box:nth-child(4) {
+  transform: rotate(-2deg);
+  position: relative;
+  top: -1.5em;
+}
+
+dt {
+  font-weight: bold;
+  color: #258179;
+  float: left;
+  width: 100%;
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
+dd.description {
+  margin: 0 0 1em 0.25em;
+  float: left;
+  width: 100%;
+  color: #003f5c;
+  line-height: 1em;
+  padding-left: 0.5em;
+}
+
+dd.description p {
+  margin: 0;
+}
+
+dd.description:before {
+  color: #ff0000b6;
+  float: left;
+  margin-right: 0.25em;
+  margin-left: -1.05em;
+  content: "\2570";
+}
+
+p.prices {
+  float: left;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+p.prices span {
+  display: block;
+  text-align: right;
+  color: #003f5c;
+  float: left;
+  padding-left: 0.25em;
+}
+
+p.prices span + span {
+  float: right;
+}
+
+p.prices span em {
+  padding: 0 0.35em;
+  color: #ff0000c1;
+  font-weight: bold;
+
+  margin-left: 0.25em;
+}
+
+span.note {
+  font-size: 0.85em;
+  padding-top: 0.25em;
+}
+
+span.note em {
+  margin-right: 0.25em;
+}
+
+p.tip {
+  color: #607d8b;
+  font-weight: bold;
+  line-height: 1em;
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+*/ p.tip:before {
+  content: "\22C6";
+  color: #607d8b;
+  float: left;
+  margin-right: 0.25em;
+  margin-left: -0.75em;
+}
+
+@media only screen and (max-width: 980px) {
+  li.box {
+    width: 92%;
+  }
+
+  li.box:nth-child(3) {
+    transform: rotate(-3deg);
+    top: 0;
+  }
+
+  li.box:nth-child(4) {
+    transform: rotate(2deg);
+    top: 0;
+  }
 }
