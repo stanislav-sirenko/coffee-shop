@@ -433,7 +433,7 @@ a:hover {
   padding: 0 0.5em 0.15em 1.2em;
   border-bottom: 2px solid rgb(41, 135, 193);
   border-image-slice: 1;
-  border-image-source: linear-gradient(90deg, transparent, rgb(41, 135, 193) 10%, rgb(41, 135, 193) 90%, #ff000000);
+  border-image-source: linear-gradient(90deg, transparent, aqua 10%, aqua 90%, #ff000000);
   width: calc(100% + 0.75em);
 }
 
@@ -462,7 +462,7 @@ li.box {
   border-left: 2px solid rgb(41, 135, 193);
   border-image-slice: 1;
   border-right: 2px solid rgb(41, 135, 193);
-  border-image-source: linear-gradient(180deg, transparent, rgb(41, 135, 193) 20%, rgb(41, 135, 193) 60%, #ffffff00 90%);
+  border-image-source: linear-gradient(180deg, transparent, aqua 20%, aqua 60%, #ffffff00 90%);
   padding-right: 1em;
   padding-bottom: 4em;
 }
@@ -473,7 +473,7 @@ li.box:after {
   width: calc(100% + 4em);
   border-bottom: 2px solid rgb(41, 135, 193);
   border-image-slice: 1;
-  border-image-source: linear-gradient(90deg, transparent, rgb(41, 135, 193) 15%, rgb(41, 135, 193) 85%, #ffffff00);
+  border-image-source: linear-gradient(90deg, transparent, aqua 15%, aqua 85%, #ffffff00);
   margin-left: -2em;
   height: 0.75em;
 }
