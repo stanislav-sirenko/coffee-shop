@@ -9,6 +9,20 @@
 }
 
 @font-face {
+  font-family: "pir";
+  src: url(./fonts/pir.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gal";
+  src: url(./fonts/gal.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Montserrat-Bold";
   src: url(./fonts/Montserrat-Bold.woff) format("woff");
   font-weight: bold;
@@ -293,7 +307,7 @@ h1 {
 .info-content {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 70px;
+  margin: 70px 0;
 }
 
 .info-content__card {
@@ -419,13 +433,13 @@ a:hover {
 
 .menu {
   text-align: center;
-  font-family: "Nunito-Bold";
-  font-size: 40px;
+  font-family: "pir";
+  font-size: 60px;
   color: #003f5c;
 }
 
 .box-title {
-  font-family: "Nunito-Bold";
+  font-family: "gal";
 
   color: #003f5c;
   font-weight: normal;
@@ -433,7 +447,7 @@ a:hover {
   padding: 0 0.5em 0.15em 1.2em;
   border-bottom: 2px solid rgb(41, 135, 193);
   border-image-slice: 1;
-  border-image-source: linear-gradient(90deg, transparent, aqua 10%, aqua 90%, #ff000000);
+  border-image-source: linear-gradient(90deg, transparent, rgb(41, 135, 193) 10%, rgb(41, 135, 193) 90%, #ff000000);
   width: calc(100% + 0.75em);
 }
 
@@ -445,7 +459,7 @@ a:hover {
 } */
 
 ul.boxes {
-  font-family: "Nunito-Regular";
+  font-family: "gal";
   margin: 0;
   padding: 0;
   list-style: none;
@@ -462,7 +476,7 @@ li.box {
   border-left: 2px solid rgb(41, 135, 193);
   border-image-slice: 1;
   border-right: 2px solid rgb(41, 135, 193);
-  border-image-source: linear-gradient(180deg, transparent, aqua 20%, aqua 60%, #ffffff00 90%);
+  border-image-source: linear-gradient(180deg, transparent, rgb(41, 135, 193) 20%, rgb(41, 135, 193) 60%, #ffffff00 90%);
   padding-right: 1em;
   padding-bottom: 4em;
 }
@@ -473,7 +487,7 @@ li.box:after {
   width: calc(100% + 4em);
   border-bottom: 2px solid rgb(41, 135, 193);
   border-image-slice: 1;
-  border-image-source: linear-gradient(90deg, transparent, aqua 15%, aqua 85%, #ffffff00);
+  border-image-source: linear-gradient(90deg, transparent, rgb(41, 135, 193) 15%, rgb(41, 135, 193) 85%, #ffffff00);
   margin-left: -2em;
   height: 0.75em;
 }
@@ -523,7 +537,7 @@ dd.description p {
 }
 
 dd.description:before {
-  color: #ff0000b6;
+  color: #ff000097;
   float: left;
   margin-right: 0.25em;
   margin-left: -1.05em;
